@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         
         <div className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Logo" width={80} height={80} />
+          <Image src="/logo.png" alt="Logo" width={50} height={50} />
           
         </div>
 
