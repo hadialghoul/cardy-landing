@@ -22,7 +22,7 @@ const Hero = () => {
               rel="noopener"
             >
               <Image
-                src="/app-store.png"
+                src="/App_Store.png"
                 alt="Download on App Store"
                 width={150}
                 height={50}
@@ -36,7 +36,7 @@ const Hero = () => {
               rel="noopener"
             >
               <Image
-                src="/play-store.jpg"
+                src="/Play_Store.png"
                 alt="Get it on Google Play"
                 width={150}
                 height={50}
@@ -49,7 +49,7 @@ const Hero = () => {
         {/* Right Column */}
         <div className="w-full max-w-md">
           <Image
-            src="/screen1.png"
+            src="/main.jpg"
             alt="Cardy App Screenshot"
             width={400}
             height={800}

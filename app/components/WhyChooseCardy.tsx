@@ -25,7 +25,7 @@ const WhyChooseCardy = () => {
           <ul className="space-y-4">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start space-x-3">
-                <CheckCircle className="text-red-500 mt-1" />
+                <CheckCircle className="text-blue-300 mt-1" />
                 <span className="text-gray-700">{benefit}</span>
               </li>
             ))}
@@ -33,7 +33,7 @@ const WhyChooseCardy = () => {
         </div>
 
        <div className="grid grid-cols-2 gap-4">
-          {["/image1.png", "/image2.png", "/image3.png", "/image4.png"].map((src, index) => (
+          {["/image1.jpeg", "/image2.jpeg", "/image3.jpeg", "/image4.jpeg"].map((src, index) => (
             <div key={index} className="rounded-lg overflow-hidden shadow-md">
               <img
                 src={src}

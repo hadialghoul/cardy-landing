@@ -2,39 +2,47 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, IconButton } from '@mui/material'
+import {  IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
+import Button from '@mui/material/Button';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-gray-300 shadow-md sticky top-0 z-50  py-4 text-black">
+    <nav className="bg-blue-300 shadow-md sticky top-0 z-50  py-4 text-white-500">
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
+        
         <div className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Logo" width={40} height={40} />
-          <span className="text-xl font-semibold text-red-800 dark:text-white">Cardy</span>
+          <Image src="/logo.png" alt="Logo" width={80} height={80} />
+          
         </div>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-8 text-gray-700 dark:text-gray-200 font-medium">
           <li>
-            <Link href="#" className="hover:text-red-600 transition-colors">Features</Link>
+            <Link href="#" className=" transition-colors">Features</Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-red-600 transition-colors">How It Works</Link>
+            <Link href="#" className="transition-colors">How It Works</Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-red-600 transition-colors">Downloads Now</Link>
+            <Link href="#" className="transition-colors">Downloads Now</Link>
           </li>
         </ul>
 
-        {/* Button - desktop only */}
+
         <div className="hidden md:block">
           <Link href="#">
-            <Button variant="contained" color="error">Downloads</Button>
+           <Button
+              variant="contained"
+              fullWidth
+              disableElevation
+              disableRipple
+              className="!bg-gray-300 !text-white hover:!bg-gray-400 !shadow-none"
+              >
+                Download Now
+              </Button>
           </Link>
         </div>
 
@@ -51,17 +59,25 @@ export default function Navbar() {
         <div className="md:hidden px-6 pb-4">
           <ul className="flex flex-col gap-4 text-gray-700 dark:text-gray-200 font-medium">
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)} className="hover:text-red-600">Features</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>Features</Link>
             </li>
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)} className="hover:text-red-600">How It Works</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>How It Works</Link>
             </li>
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)} className="hover:text-red-600">Downloads</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)} >Downloads</Link>
             </li>
             <li>
               <Link href="#" onClick={() => setMenuOpen(false)}>
-                <Button fullWidth variant="contained" color="error">Download Now</Button>
+                 <Button
+              variant="contained"
+              fullWidth
+              disableElevation
+              disableRipple
+              className="!bg-gray-300 !text-white hover:!bg-gray-400 !shadow-none"
+              >
+                Download Now
+              </Button>
               </Link>
             </li>
           </ul>

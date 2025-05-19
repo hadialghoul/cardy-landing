@@ -44,7 +44,7 @@ const Features = () => {
               className="rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <CardContent className="flex flex-col items-center p-6">
-                <div className="bg-red-500 text-white rounded-full p-3 mb-4">
+                <div className="bg-blue-300 text-white rounded-full p-3 mb-4">
                   <Icon fontSize="large" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
