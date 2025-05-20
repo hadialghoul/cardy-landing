@@ -17,7 +17,7 @@ const Hero = () => {
 
           <div className="flex gap-4">
             <a
-              href="https://apps.apple.com/" 
+              href="https://apps.apple.com/us/app/cardyapp/id6636475785" 
               target="_blank"
               rel="noopener"
             >
@@ -31,7 +31,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://play.google.com/store" 
+              href="https://play.google.com/store/apps/details?id=com.brainkets.cardy" 
               target="_blank"
               rel="noopener"
             >
@@ -51,8 +51,8 @@ const Hero = () => {
           <Image
             src="/main.jpg"
             alt="Cardy App Screenshot"
-            width={400}
-            height={800}
+            width={300}
+            height={600}
             className="mx-auto rounded-lg shadow-lg"
           />
         </div>

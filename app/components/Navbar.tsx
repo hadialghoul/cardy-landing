@@ -21,19 +21,19 @@ export default function Navbar() {
 
         <ul className="hidden md:flex items-center gap-8 text-gray-700 dark:text-gray-200 font-medium">
           <li>
-            <Link href="#" className=" transition-colors">Features</Link>
+            <Link href="#features" className=" transition-colors">Features</Link>
           </li>
           <li>
-            <Link href="#" className="transition-colors">How It Works</Link>
+            <Link href="#how-it-works" className="transition-colors">How It Works</Link>
           </li>
           <li>
-            <Link href="#" className="transition-colors">Downloads Now</Link>
+            <Link href="#downoladboth" className="transition-colors">Downloads Now</Link>
           </li>
         </ul>
 
 
         <div className="hidden md:block">
-          <Link href="#">
+          <Link href="#downoladboth">
            <Button
               variant="contained"
               fullWidth
@@ -59,16 +59,16 @@ export default function Navbar() {
         <div className="md:hidden px-6 pb-4">
           <ul className="flex flex-col gap-4 text-gray-700 dark:text-gray-200 font-medium">
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)}>Features</Link>
+              <Link href="#features" onClick={() => setMenuOpen(false)}>Features</Link>
             </li>
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)}>How It Works</Link>
+              <Link href="#how-it-works" onClick={() => setMenuOpen(false)}>How It Works</Link>
             </li>
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)} >Downloads</Link>
+              <Link href="#downoladboth" onClick={() => setMenuOpen(false)} >Downloads</Link>
             </li>
             <li>
-              <Link href="#" onClick={() => setMenuOpen(false)}>
+              <Link href="#downoladboth" onClick={() => setMenuOpen(false)}>
                  <Button
               variant="contained"
               fullWidth

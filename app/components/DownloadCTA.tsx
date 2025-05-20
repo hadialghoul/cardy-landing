@@ -4,7 +4,7 @@ import { Apple, Android } from "@mui/icons-material";
 
 const DownloadCTA = () => {
   return (
-    <section className="bg-blue-300 text-white py-16 px-4">
+    <section className="bg-blue-300 text-white py-16 px-4" id="downoladboth">
       <div className="container mx-auto text-center max-w-3xl">
         {/* Headline & Subtext */}
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get Cardy Today</h2>
